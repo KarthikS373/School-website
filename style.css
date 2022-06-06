@@ -12,8 +12,30 @@
   --headertext-color: ;
   --subtext-color: ;
   --container-color: ;
+  --scrollbar-track: white;
+  --scrollbar-handle: rgb(220,220,220);
+  --scrollbar-handle-hover: grey;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 35px;
+    background-color: var(--scrollbar-handle);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-handle-hover);
+}
+
+/* Header */
 .header__prenav {
   padding: 10px;
   display: flex;
